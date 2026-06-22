@@ -1,0 +1,46 @@
+/* 1. 設定基礎字體與備援 */
+body {
+    font-family: "Microsoft JhengHei", "PingFang TC", "Heiti TC", Arial, sans-serif;
+}
+
+/* 2. 標題設定 */
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.2; /* 建議加上行高，避免文字擁擠 */
+}
+
+/* 3. 間距類別 */
+.padding-tb {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.group {
+    padding-top: 30px;
+}
+
+/* 4. 自定義寬度 */
+.w-10 {
+    width: 10% !important;
+}
+
+.w-15 {
+    width: 15% !important;
+}
+
+/* 5. 針對選單的樣式優化 */
+/* 建議將 #select 改為類別或是直接針對標籤，除非你確定 HTML 有 id="select" */
+select#select {
+    width: 120px;
+    height: 40px;
+    padding: 5px; /* 增加一點內距，視覺上較舒適 */
+    vertical-align: middle; /* 讓選單與按鈕對齊 */
+}
+
+/* 6. 響應式字體 */
+@media (min-width: 768px) {
+    h1 {
+        font-size: 2.4rem;
+    }
+}
