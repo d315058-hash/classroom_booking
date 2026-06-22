@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-Hant"> <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>會議室借用系統</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="wrap" class="py-4"> <div class="container-fluid">
+            <div class="row align-items-center mb-4">
+                <div class="col-8">
+                    <h1>教室借用系統</h1>
+                </div>
+                <div class="col-4 text-right">
+                    <a href="你的Google表單網址" class="btn btn-danger" target="_blank">申請借用</a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 mb-3">
+                    <div class="form-inline"> <label class="mr-2">會議室搜尋</label>
+                        <select id="roomFilter" class="form-control mr-2">
+                            <option value="" selected>全部 (All)</option>
+                            <option value="A101">A101</option>
+                            <option value="A102">A102</option>
+                            <option value="A103">A103</option>
+                        </select>
+                        <button type="button" id="doaction" class="btn btn-primary">查詢</button>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="table-responsive">
+                        <table class="table table-hover table-bordered mb-0"> <thead class="thead-light"> <tr>
+                                    <th scope="col">申請日期</th>
+                                    <th scope="col">申請部門</th>
+                                    <th scope="col">申請人</th>
+                                    <th scope="col">會議室名稱</th>
+                                    <th scope="col">借用日期</th>
+                                    <th scope="col">借用時間（起）</th>
+                                    <th scope="col">借用時間（迄）</th>
+                                    <th scope="col">事由</th>
+                                </tr>
+                            </thead>
+                            <tbody id="table-data">
+                                </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
